@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="title">
+      <a href="https://naqib-portfolio.netlify.app/" target="_blank"
+        >Calculator by Naqib Hussain</a
+      >
+    </div>
+    <div class="page">
+      <div class="calc">
+        <div class="calc-display">
+          <span id="display-value"> 0 </span>
+        </div>
+        <div class="calc-controls">
+          <div class="calc-row">
+            <button class="calc-button">C</button>
+            <div class="calc-button" id="white"></div>
+            <div class="calc-button" id="white"></div>
+            <button class="calc-button" onclick="handleOperator('/')">/</button>
+          </div>
+          <div class="calc-row">
+            <button class="calc-button" onclick="handleNumberInput(7);">
+              7
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(8);">
+              8
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(9);">
+              9
+            </button>
+            <button class="calc-button" onclick="handleOperator('X')">X</button>
+          </div>
+          <div class="calc-row">
+            <button class="calc-button" onclick="handleNumberInput(4);">
+              4
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(5);">
+              5
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(6);">
+              6
+            </button>
+            <button class="calc-button" onclick="handleOperator('-')">-</button>
+          </div>
+          <div class="calc-row">
+            <button class="calc-button" onclick="handleNumberInput(1);">
+              1
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(2);">
+              2
+            </button>
+            <button class="calc-button" onclick="handleNumberInput(3);">
+              3
+            </button>
+            <button class="calc-button" onclick="handleOperator('+');">
+              +
+            </button>
+          </div>
+          <div class="calc-row">
+            <button class="calc-button" onclick="handleNumberInput(0);">
+              0
+            </button>
+            <div class="calc-button" id="white"></div>
+            <div class="calc-button" id="white"></div>
+            <button class="calc-button" onclick="handleOperator('=');">
+              =
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js" type="text/javascript"></script>
+  </body>
+</html>
